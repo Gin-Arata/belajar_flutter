@@ -21,13 +21,22 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Aplikasi Hello World",
+            "Hello World Aplikasi",
+            style: TextStyle(
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
           ),
+          backgroundColor: Colors.blue,
         ),
 
         // Widget Center digunakan untuk menengahkan widget yang ada di dalamnya
         body: const Center(
-          child: Text("Hello World"),
+          child: Text(
+            "Hello World",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
